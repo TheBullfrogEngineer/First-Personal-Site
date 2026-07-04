@@ -10,8 +10,36 @@
     <header>
       <h1>My Personal Site</h1>
       <nav>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
+        <style>
+          .nav-button {
+            background-color: #4caf50;
+            border: 5px solid #134615;
+            color: rgb(13, 0, 0);
+            height: 50px;
+            width: 100px;
+            font-size: 20px;
+            font-family: "Arial", sans-serif;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 15px;
+          }
+
+          .nav-button:hover {
+            background-color: #134615;
+            color: #ffffff;
+            border: 5px solid #4caf50;
+          }
+
+          .nav-button:active {
+            opacity: 0.8;
+            background-color: #4caf50;
+            color: #000000;
+            border: 5px solid #065e09;
+          }
+        </style>
+        <button class="nav-button">Me</button>
+        <button class="nav-button" id="Projects">Projects</button>
+        <button class="nav-button" id="Socials">Socials</button>
       </nav>
     </header>
     <section id="about">
@@ -21,7 +49,21 @@
 
     <section id="projects">
       <h2>Projects</h2>
-      <p>Add your projects here.</p>
+      <p>I have yet to make meaningful projects, but stay tuned!</p>
+    </section>
+
+    <section id="socials">
+      <h2>Socials</h2>
+      <p>Connect with me on social media.</p>
+      <a href="https://www.youtube.com/@BullfrogEngineering" target="_blank"
+        >YouTube</a
+      >
+      <a href="https://github.com/TheBullfrogEngineer" target="_blank"
+        >GitHub</a
+      >
+      <a href="https://www.instagram.com/bullfrog_engineering" target="_blank"
+        >Instagram</a
+      >
     </section>
   </body>
 </html>
