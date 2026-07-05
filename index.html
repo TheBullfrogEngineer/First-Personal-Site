@@ -8,56 +8,86 @@
   </head>
   <body>
     <header>
-      <h1>My Personal Site</h1>
+      <style>
+        header {
+          background-color: #4caf50;
+          color: #ffffff;
+          padding: 20px;
+          text-align: center;
+          font-family: "Arial", sans-serif;
+          font-size: 45px;
+          border-radius: 30px;
+        }
+
+        nav a {
+          color: #ffffff;
+          text-decoration: none;
+          margin: 0 10px;
+          font-size: 40px;
+        }
+
+        nav a:hover {
+          text-decoration: underline;
+        }
+      </style>
+      <h1>Welcome to my Swamp</h1>
       <nav>
-        <style>
-          .nav-button {
-            background-color: #4caf50;
-            border: 5px solid #134615;
-            color: rgb(13, 0, 0);
-            height: 50px;
-            width: 100px;
-            font-size: 20px;
-            font-family: "Arial", sans-serif;
-            font-weight: bold;
-            cursor: pointer;
-            border-radius: 15px;
-            transition: all 0.3s ease;
-            box-shadow: 4px 4px 4px #999;
-            margin: 5px;
-          }
-
-          .nav-button:hover {
-            background-color: #134615;
-            color: #ffffff;
-            border: 5px solid #4caf50;
-          }
-
-          .nav-button:active {
-            opacity: 0.8;
-            background-color: #4caf50;
-            color: #000000;
-            border: 5px solid #065e09;
-          }
-        </style>
-        <button class="nav-button">Me</button>
-        <button class="nav-button" id="Projects">Projects</button>
-        <button class="nav-button" id="Socials">Socials</button>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#socials">Socials</a>
       </nav>
     </header>
     <section id="about">
-      <h2>About Me</h2>
-      <p>Hello, I am Bullfrog, and welcome to my Swamp.</p>
+      <h2 class="About">About Me</h2>
+      <p class="About-text">Hello, I am Bullfrog, and welcome to my Swamp.</p>
+      <style>
+        .About {
+          font-family: "Arial", sans-serif;
+          font-size: 55px;
+          color: #4caf50;
+          text-align: left;
+          margin-bottom: 20px;
+          font-weight: bold;
+        }
+
+        .About-text {
+          font-family: "Arial", sans-serif;
+          font-size: 30px;
+          color: #134615;
+          text-align: left;
+        }
+      </style>
     </section>
 
     <section id="projects">
-      <h2>Projects</h2>
-      <p>I have yet to make meaningful projects, but stay tuned!</p>
+      <h2 class="Projects">Projects</h2>
+      <p class="Project-text">
+        I have yet to make meaningful projects, but stay tuned!
+      </p>
+      <style>
+        .Projects {
+          font-family: "Arial", sans-serif;
+          font-size: 55px;
+          color: #4caf50;
+          text-align: center;
+          margin-bottom: 20px;
+          font-weight: bold;
+        }
+      </style>
+
+      <style>
+        .Project-text {
+          font-family: "Arial", sans-serif;
+          font-size: 30px;
+          color: #134615;
+          text-align: center;
+        }
+      </style>
     </section>
 
     <section id="socials">
-      <h2>Socials</h2>
-      <p>Connect with me on social media.</p>
+      <h2 class="Socials">Socials</h2>
+      <p class="Socials-text">Connect with me on social media.</p>
       <a href="https://www.youtube.com/@BullfrogEngineering" target="_blank"
         >YouTube</a
       >
@@ -67,6 +97,42 @@
       <a href="https://www.instagram.com/bullfrog_engineering" target="_blank"
         >Instagram</a
       >
+
+      <style>
+        .Socials {
+          font-family: "Arial", sans-serif;
+          font-size: 55px;
+          color: #4caf50;
+          text-align: right;
+          margin-bottom: 20px;
+          font-weight: bold;
+        }
+
+        .Socials-text {
+          font-family: "Arial", sans-serif;
+          font-size: 30px;
+          color: #134615;
+          text-align: right;
+        }
+
+        a {
+          display: inline-block;
+          margin-right: 10px;
+          padding: 10px 20px;
+          background-color: #4caf50;
+          color: #ffffff;
+          text-decoration: none;
+          border-radius: 5px;
+          transition: all 0.3s ease;
+          font-family: "Arial", sans-serif;
+          font-size: 20px;
+        }
+
+        a:hover {
+          background-color: #134615;
+          text-decoration: underline;
+        }
+      </style>
     </section>
   </body>
 </html>
